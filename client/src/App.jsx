@@ -21,7 +21,7 @@ export default function app(){
             "name": "Dad",
             "type": "Animal",
             "color": "Blue",
-            "price": "150"
+            "price": "150",
             "image": "https://cdn.ty.com/static/images/48d02a9b2e97364dc3236e3da06a5637_lg.png"
         }
 ]

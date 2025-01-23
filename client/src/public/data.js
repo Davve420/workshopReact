@@ -3,6 +3,7 @@ const plushy = [
       "id": "plush1",
       "name": "Bluey",
       "type": "Animal",
+
       "color": "Blue",
       "price": "150",
       "image": "https://cdn.ty.com/static/images/eabf1ade4c7e7e726c29886e996bbc51_lg.png"

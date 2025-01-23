@@ -1,6 +1,6 @@
 const plushy = [
     {
-      "id": "plush1-1",
+      "id": "plush1",
       "name": "Bluey",
       "type": "Animal",
       "color": "Blue",
@@ -8,7 +8,7 @@ const plushy = [
       "image": "https://cdn.ty.com/static/images/eabf1ade4c7e7e726c29886e996bbc51_lg.png"
     },
     {
-      "id": "plush1-2",
+      "id": "plush2",
       "name": "Bingo",
       "type": "Animal",
       "color": "Brown",
@@ -16,7 +16,7 @@ const plushy = [
       "image": "https://cdn.ty.com/static/images/a2c6048a331ce27e2f5330142407c8ef_lg.png"
     },
     {
-      "id": "plush1-3",
+      "id": "plush3",
       "name": "Dad",
       "type": "Animal",
       "color": "Blue",
@@ -24,7 +24,7 @@ const plushy = [
       "image": "https://cdn.ty.com/static/images/48d02a9b2e97364dc3236e3da06a5637_lg.png"
     },
     {
-      "id": "plush1-4",
+      "id": "plush4",
       "name": "Spark",
       "type": "Dragon",
       "color": "Purple",
@@ -32,7 +32,7 @@ const plushy = [
       "image": "https://cdn.ty.com/static/images/89b01cb5c26239cbdf33379b1a05cefc_lg.png"
     },
     {
-      "id": "plush1-5",
+      "id": "plush5",
       "name": "Daphne",
       "type": "Dragon",
       "color": "Purple",
@@ -41,7 +41,7 @@ const plushy = [
 
     },
     {
-      "id": "plush1-6",
+      "id": "plush6",
       "name": "Cinder",
       "type": "Dragon",
       "color": "Green",
@@ -50,7 +50,7 @@ const plushy = [
 
     },
     {
-      "id": "plush1-7",
+      "id": "plush7",
       "name": "Fantasia",
       "type": "Unicorn",
       "color": "Pink",
@@ -59,7 +59,7 @@ const plushy = [
 
     },
     {
-      "id": "plush1-8",
+      "id": "plush8",
       "name": "Harmonie",
       "type": "Unicorn",
       "color": "White",
@@ -68,7 +68,7 @@ const plushy = [
 
     },
     {
-      "id": "plush1-9",
+      "id": "plush9",
       "name": "Rosette",
       "type": "Unicorn",
       "color": "Purple",
@@ -77,7 +77,7 @@ const plushy = [
 
     },
     {
-      "id": "plush1-10",
+      "id": "plush10",
       "name": "Waddles",
       "type": "Sea-animal",
       "color": "Black",
@@ -86,7 +86,7 @@ const plushy = [
 
     },
     {
-      "id": "plush1-11",
+      "id": "plush11",
       "name": "Cruiser",
       "type": "Sea-animal",
       "color": "Green",
@@ -95,7 +95,7 @@ const plushy = [
 
     },
     {
-      "id": "plush1-12",
+      "id": "plush12",
       "name": "Sheldon",
       "type": "Sea-animal",
       "color": "Pink",

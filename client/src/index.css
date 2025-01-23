@@ -35,9 +35,16 @@ h1{
   width: 85%;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 #plushView img{
   width: 200px;
   height: 200px;
+}
+
+#singlePlushy{
+  display: flex;
+  flex-direction: column;
+  margin: 2%;
 }

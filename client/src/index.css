@@ -30,3 +30,14 @@ h1{
   margin-right: 10%;
   padding: 100px;
 }
+
+#plushView{
+  width: 85%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#plushView img{
+  width: 200px;
+  height: 200px;
+}

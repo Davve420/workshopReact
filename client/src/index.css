@@ -1,0 +1,32 @@
+#navbar{
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+
+h1{
+  text-align: center;
+}
+
+#homeview{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#PlushieView{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#PlushieView p{
+  margin: 10px;
+}
+
+#PlushieCart{
+  background-color: black;
+  color: aliceblue;
+  margin-right: 10%;
+  padding: 100px;
+}

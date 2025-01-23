@@ -103,3 +103,5 @@ const plushy = [
       "image": "https://cdn.ty.com/static/images/277d01413585cf5f8258258a1124b100_lg.png"
     }
 ]
+
+export default plushy

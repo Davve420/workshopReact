@@ -1,5 +1,5 @@
 
-export default function Plushy({ plushie }) {
+export default function Plushy({ plushie, addToCart }) {
     const { name, image } = plushie
 
     return <div id="singlePlushy">

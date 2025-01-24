@@ -1,15 +1,17 @@
-import { BrowserRouter, Route, Routes } from "react-router";
-import Layout from "./Layout.jsx"
-import Home from "./pages/Home.jsx"
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Layout from './Layout'
+import Home from './pages/Home'
+import Wishlist from './pages/Wishlist'
 
-export default function App(){
-  return<>
-   <BrowserRouter>
-    <Routes>
-      <Route path="/" element={<Layout />}>
-      <Route index element={<Home />} />
-      </Route>
-    </Routes>
-  </BrowserRouter>
-  </>
+export default function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="wishlist" element={<Wishlist />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  )
 }

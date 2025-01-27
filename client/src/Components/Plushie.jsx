@@ -1,16 +1,8 @@
 import { useOutletContext } from "react-router-dom"
-import { useState } from "react"
 
 export default function Plushy({ plushie, addToCart }) {
     const { wishlist, addToWishlist, removeFromWishlist } = useOutletContext()
     const isInWishlist = wishlist.some(item => item.name === plushie.name)
-    const [showHeart, setShowHeart] = useState(false)
-
-    const handleAddToCart = () => {
-        addToCart(plushie.name)
-        setShowHeart(true)
-        setTimeout(() => setShowHeart(false), 1000)
-    }
 
     return <div id="singlePlushy">
         <button 
@@ -19,10 +11,9 @@ export default function Plushy({ plushie, addToCart }) {
         >
             {isInWishlist ? '⭐' : '☆'}
         </button>
-        {showHeart && <div className="floating-heart">❤️</div>}
         <img src={plushie.image} alt={plushie.name} />
         <p>{plushie.name}</p>
         <p className="price">{plushie.price} kr</p>
-        <button onClick={handleAddToCart}>Lägg i kundvagn</button>
+        <button onClick={() => addToCart(plushie.name)}>Lägg i kundvagn</button>
     </div>
 }

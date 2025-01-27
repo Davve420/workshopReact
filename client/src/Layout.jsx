@@ -43,19 +43,16 @@ const plushieMessages = {
 
 function getPlushieMessage(plushie) {
     const messages = plushieMessages[plushie.type.toLowerCase()] || plushieMessages.default
-    // Använd plushiens namn som seed för att alltid få samma meddelande för samma plushie
     const index = plushie.name.length % messages.length
     return messages[index]
 }
 
 export default function Layout(){
     const [wishlist, setWishlist] = useState(() => {
-        // Hämta sparad önskelista från localStorage när komponenten laddas
         const savedWishlist = localStorage.getItem('wishlist')
         return savedWishlist ? JSON.parse(savedWishlist) : []
     })
 
-    // Spara önskelistan i localStorage när den uppdateras
     useEffect(() => {
         localStorage.setItem('wishlist', JSON.stringify(wishlist))
     }, [wishlist])

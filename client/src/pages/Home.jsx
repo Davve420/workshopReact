@@ -10,7 +10,6 @@ export default function Home() {
     const [isCartOpen, setIsCartOpen] = useState(false)
     const [showConfirmation, setShowConfirmation] = useState(false)
 
-    // Spara kundvagnen i localStorage när den uppdateras
     useEffect(() => {
         localStorage.setItem('cart', JSON.stringify(cart))
     }, [cart])

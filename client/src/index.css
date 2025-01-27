@@ -126,12 +126,11 @@ h1 {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   border: 2px solid rgba(255, 230, 109, 0.3);
   position: relative;
-  transform-style: preserve-3d;
-  perspective: 1000px;
 }
 
 #singlePlushy:hover {
-  transform: translateY(-5px) rotateX(5deg);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
 }
 
 #singlePlushy img {
@@ -161,7 +160,8 @@ h1 {
 }
 
 #singlePlushy button:hover {
-  transform: translateY(-2px) scale(1.05);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 0 #3AA1D9;
 }
 
 #singlePlushy button:active {
@@ -223,19 +223,6 @@ h1 {
   z-index: 1000;
   font-family: 'Comic Neue', cursive;
   border: 3px solid #FFE66D;
-  animation: slideIn 0.3s ease-out;
-  transform-origin: top right;
-}
-
-@keyframes slideIn {
-  from {
-    opacity: 0;
-    transform: translateY(-20px) scale(0.95);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
 }
 
 .cart-dropdown h3 {
@@ -260,8 +247,6 @@ h1 {
   border-bottom: 2px dashed #FFE66D;
   font-size: 1.1rem;
   transition: background-color 0.2s ease;
-  animation: fadeIn 0.3s ease-out;
-  animation-fill-mode: both;
 }
 
 .cart-item:hover {
@@ -315,8 +300,6 @@ h1 {
   align-items: center;
   font-family: 'Bubblegum Sans', cursive;
   font-size: 1.3rem;
-  animation: fadeIn 0.3s ease-out 0.3s;
-  animation-fill-mode: both;
 }
 
 .total-price {
@@ -337,8 +320,6 @@ h1 {
   cursor: pointer;
   box-shadow: 0 4px 0 #FF4F4F;
   transition: all 0.2s ease;
-  animation: fadeIn 0.3s ease-out 0.4s;
-  animation-fill-mode: both;
 }
 
 .checkout-button:hover {
@@ -442,7 +423,7 @@ h1 {
 }
 
 .wishlist-button.in-wishlist {
-  animation: starPop 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  animation: starPop 0.3s ease;
 }
 
 .wishlist-count {
@@ -484,7 +465,6 @@ h1 {
 
 .wishlist-page {
   padding: 2rem;
-  animation: pageTransition 0.4s ease-out;
 }
 
 .wishlist-page h2 {
@@ -573,87 +553,12 @@ h1 {
 }
 
 @keyframes starPop {
-  0% { transform: scale(1) rotate(0); }
-  50% { transform: scale(1.5) rotate(180deg); }
-  100% { transform: scale(1) rotate(360deg); }
+  0% { transform: scale(1); }
+  50% { transform: scale(1.3) rotate(20deg); }
+  100% { transform: scale(1); }
 }
 
 @keyframes float {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-20px); }
-}
-
-.cart-item:nth-child(1) { animation-delay: 0.1s; }
-.cart-item:nth-child(2) { animation-delay: 0.2s; }
-.cart-item:nth-child(3) { animation-delay: 0.3s; }
-.cart-item:nth-child(4) { animation-delay: 0.4s; }
-.cart-item:nth-child(5) { animation-delay: 0.5s; }
-
-/* Hjärtanimation */
-.floating-heart {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 3rem;
-  pointer-events: none;
-  z-index: 100;
-  animation: floatHeart 1s ease-out forwards;
-}
-
-@keyframes floatHeart {
-  0% {
-    opacity: 1;
-    transform: translate(-50%, -50%) scale(0.5);
-  }
-  50% {
-    opacity: 1;
-    transform: translate(-50%, -100%) scale(1.5);
-  }
-  100% {
-    opacity: 0;
-    transform: translate(-50%, -150%) scale(1);
-  }
-}
-
-/* Sidövergångar */
-.plushList, .wishlist-page {
-  animation: pageTransition 0.4s ease-out;
-}
-
-@keyframes pageTransition {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* Förbättrad hover-effekt för plushies */
-#singlePlushy {
-  transform-style: preserve-3d;
-  perspective: 1000px;
-}
-
-#singlePlushy:hover {
-  transform: translateY(-5px) rotateX(5deg);
-}
-
-#singlePlushy button:hover {
-  transform: translateY(-2px) scale(1.05);
-}
-
-/* Förbättrad animation för wishlist-knappen */
-.wishlist-button.in-wishlist {
-  animation: starPop 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-/* Uppdaterad starPop animation */
-@keyframes starPop {
-  0% { transform: scale(1) rotate(0); }
-  50% { transform: scale(1.5) rotate(180deg); }
-  100% { transform: scale(1) rotate(360deg); }
 }
